@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.layui-tab-self {margin: 0px;}
+.layui-tab-title-self {height: 45px;}
+.layui-tab-title li {line-height: 45px !important;}
+.layui-tab-title .layui-this:after {height: 46px !important;}
