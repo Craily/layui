@@ -7,6 +7,16 @@ public class Dept {
 
     private String loc;
 
+    public Dept(Short deptno, String dname, String loc) {
+        this.deptno = deptno;
+        this.dname = dname;
+        this.loc = loc;
+    }
+
+    public Dept() {
+        super();
+    }
+
     public Short getDeptno() {
         return deptno;
     }

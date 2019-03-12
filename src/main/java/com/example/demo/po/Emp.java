@@ -20,6 +20,21 @@ public class Emp {
 
     private Short deptno;
 
+    public Emp(Short empno, String ename, String job, Short mgr, Date hiredate, BigDecimal sal, BigDecimal comm, Short deptno) {
+        this.empno = empno;
+        this.ename = ename;
+        this.job = job;
+        this.mgr = mgr;
+        this.hiredate = hiredate;
+        this.sal = sal;
+        this.comm = comm;
+        this.deptno = deptno;
+    }
+
+    public Emp() {
+        super();
+    }
+
     public Short getEmpno() {
         return empno;
     }

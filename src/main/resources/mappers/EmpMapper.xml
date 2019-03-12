@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo.mapper.EmpMapper">
+<mapper namespace="com.example.demo.dao.EmpMapper">
   <resultMap id="BaseResultMap" type="com.example.demo.po.Emp">
-    <result column="EMPNO" jdbcType="DECIMAL" property="empno" />
-    <result column="ENAME" jdbcType="VARCHAR" property="ename" />
-    <result column="JOB" jdbcType="VARCHAR" property="job" />
-    <result column="MGR" jdbcType="DECIMAL" property="mgr" />
-    <result column="HIREDATE" jdbcType="TIMESTAMP" property="hiredate" />
-    <result column="SAL" jdbcType="DECIMAL" property="sal" />
-    <result column="COMM" jdbcType="DECIMAL" property="comm" />
-    <result column="DEPTNO" jdbcType="DECIMAL" property="deptno" />
+    <constructor>
+      <arg column="EMPNO" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="ENAME" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOB" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MGR" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="HIREDATE" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="SAL" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="COMM" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="DEPTNO" javaType="java.lang.Short" jdbcType="DECIMAL" />
+    </constructor>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>

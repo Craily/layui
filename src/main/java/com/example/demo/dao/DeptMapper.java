@@ -1,4 +1,4 @@
-package com.example.demo.mapper;
+package com.example.demo.dao;
 
 import com.example.demo.po.Dept;
 import com.example.demo.po.DeptExample;
