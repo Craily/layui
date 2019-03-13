@@ -25,6 +25,11 @@ public class IndexController {
 		return "test/index";
 	}
 	
+	@RequestMapping("/table")
+	public String table() {
+		return "test/table";
+	}
+	
 	@GetMapping(produces=MediaType.APPLICATION_JSON_UTF8_VALUE, value="/getemp")
 	public ResponseEntity<List<Emp>> getEmp() {
 		return new ResponseEntity<List<Emp>>(empService.queryAll(), HttpStatus.OK);
